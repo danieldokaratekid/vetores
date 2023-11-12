@@ -1,3 +1,6 @@
+//questão 3:
+//crie um prograam que leia 5 números,armazenando em um
+//vetor e informe qual o menor número e qual o maior número
 #include <stdio.h>
 #include <stdlib.h>
 int main()
