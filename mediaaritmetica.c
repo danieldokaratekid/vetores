@@ -1,3 +1,6 @@
+//questão 2:
+//armazene em um vetor e calcule a média aritmética
+//monstre as 3 infomadas pelo usuário e informe a média
 #include<stdio.h>
 #include<stdlib.h>
 int main(){
