@@ -1,3 +1,6 @@
+//Questão 1:
+//crie um programa que leia 3 notas,
+//armazenado em um vetor e mostre as notas informadas
 #include<stdio.h>
 #include<stdlib.h>
 int main(){
