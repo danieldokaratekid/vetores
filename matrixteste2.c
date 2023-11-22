@@ -20,7 +20,7 @@ int main() {
         
         //Limpa cache de input.
         //fflush(stdin); // Para VS Code e Dev C++ (Windows).
-        setbuf(stdin, 0); // Para OnlineGDB (Linux).
+        
     }
     
     printf("\nExibindo dados da disciplina... \n");
