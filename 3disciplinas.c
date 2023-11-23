@@ -19,7 +19,7 @@ if(media>=7)
 printf("Aprovado");
 } else {
 media[i]=>5 && media[i]<7;
-    printf("Recuperação"){
+    printf("RecuperaÃ§Ã£o"){
 } else {
     media[i]<5;
     printf("Reprovado")
