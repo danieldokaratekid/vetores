@@ -1,40 +1,51 @@
-#include<stdio.h>
-int main(){
-char disciplina[200];
-float notas[2];
-float media[2]=0;
-int soma=0;
-int i,j;
-for ( i = 0; i < 2; i++)
+#include <stdio.h>
+int main()
 {
-printf("Digite o nome da disciplina:");
-gets(disciplina);
-printf("Digite uma nota:");
-gets(notas[i]);
-for ( i = 0; i <2; i++)
-{
- for (j=0;j<2; j++)
+    char disciplina[2][200];
+    float notas[2][2];
+    float media[2];
+    int soma = 0;
+    int i, j;
+    for (i = 0; i < 2; i++)
     {
-if(media>=7)
-printf("Aprovado");
-} else {
-media[i]=>5 && media[i]<7;
-    printf("Recuperação"){
-} else {
-    media[i]<5;
-    printf("Reprovado")
-    soma+=notas[i][j];
-    media[i]+=soma/j; 
+        printf("Digite uma disciplina:");
+        gets(disciplina[i]);
 
+        for (j = 0; j < 2; j++)
+        {
+            printf("Digite uma nota:");
+            scanf("%f", &notas[i][j]);
+
+            soma += notas[i][j];
+        }
+        fflush(stdin);
+        media[i] += soma / (float)j;
+        soma = 0;
+        fflush(stdin);
     }
-    }   
-{
-} 
-    printf("\ndisciplina %s\n",disciplina);
-    printf("\nnotas%1.f\n",notas[i]);
-    printf("\n media%1.f\n",media[i]);
+    printf("\nExibindo Resultados:\n");
+    printf("disciplina:%s/n", disciplina);
+    for (i = 0; i < 3; i++)
+    {
+        printf("\nNome da disciplina:%s\n", disciplina[i]);
+        for (j = 0; j < 2; j++)
+        {
+            printf("\nnotas:%1.f\n", notas[i][j]);
+        }
+        printf("\n media:%1.f\n", media[i]);
 
-}
-
-return 0;
+        if (media[i] >= 7)
+        {
+            printf("Aprovado\n");
+        }
+        else if (media[i] >= 5 && media[i] < 7)
+        {
+            printf("Recuperação\n");
+        }
+        else
+        {
+            printf("Reprovado");
+        }
+    }
+    return 0;
 }
