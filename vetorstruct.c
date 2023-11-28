@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    struct dados_pessoais
+    struct dados_livro
     {
         char nome[200];
         char autor[200];
@@ -9,30 +9,28 @@ int main()
         int preco;
     };
 
-    struct dados_pessoais dados[2];
+    struct dados_livro livro[2];
     int i;
- 
+
     for (i = 0; i < 2; i++)
     {
-        struct dados_pessoais dados[2];
+        struct dados_livro livro[2];
         printf("Digite o nome do livro:\n");
-        gets(dados[i].nome);
+        gets(livro[i].nome);
         printf("Digite o nome do autor:\n");
-        scanf("%s", &dados[i].autor);
+        gets(livro[i].autor);
         printf("Digite a categoria do livro:\n");
-        scanf("%s", &dados[i].categoria);
+        gets(livro[i].categoria);
         printf("Digite o preco do livro:\n");
-        scanf("%d", &dados[i].preco);
-    }
-
-    for (i = 0; i < 2; i++)
-    {
+        scanf("%d", &livro[i].preco);
         printf("\nExibindo os dados:\n");
+        printf("nome:%s\n", livro[i].nome);
+        printf("autor:%s\n", livro[i].autor);
+        printf("categoria:%s\n", livro[i].categoria);
+        printf("preco:%d\n", livro[i].preco);
+}
+    
 
-        printf("nome:%s\n", dados[i].nome);
-        printf("autor:%s\n", dados[i].autor);
-        printf("categoria:%s\n", dados[i].categoria);
-        printf("preco:%d\n", dados[i].preco);
-    }
+    
     return 0;
 }
