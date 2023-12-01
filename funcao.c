@@ -18,3 +18,7 @@ scanf("%d",&numerodois);
 calcularmaiormenor(numeroum,numerodois);
 return 0;
 }
+//int soma=a+b;
+//printf("\nsoma: %d\n",soma);
+//printf("Maior numero:%d",calcularMaior(primerioNumero,segundoNumero)));
+//return n1<n2?n1:n2;
